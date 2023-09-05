@@ -13,78 +13,120 @@
     <title>Document</title>
   </head>
   <style>
-    .logo-container {
-      display: flex;
-      border: 1.3px solid teal;
-    }
-    .menu a {
-      text-decoration: none;
-      color: #3c354f;
+        .logo-container {
+          display: flex;
+          border: 1.3px solid teal;
+        }
+        .menu a {
+          text-decoration: none;
+          color: #3c354f;
 
-      font-family: Work Sans;
-      font-size: 18px;
+          font-family: Work Sans;
+          font-size: 18px;
 
-      font-weight: 500;
-    }
-    .menu-btn {
-      border-radius: 8px;
-      background: rgba(11, 2, 35, 0.1);
-      padding: 4px;
-      border: 1.3px solid green;
-    }
-    nav {
-      display: flex;
+          font-weight: 500;
+        }
+        .menu-btn {
+          border-radius: 8px;
+          background: rgba(11, 2, 35, 0.1);
+          padding: 4px;
+          border: 1.3px solid green;
+        }
+        nav {
+          display: flex;
 
-      border: 1.3px solid red;
-    }
-    .logo-container {
-      justify-content: center;
-    }
-    .menu {
-      /*  flex-direction: column; */
-    }
-    a {
-      border: 1.3px solid red;
-    }
-    @media screen and (max-width: 576px) {
-      nav {
-        justify-content: center;
-        flex-direction: column;
-      }
-      .menu {
-        flex-direction: column;
+          border: 1.3px solid red;
+        }
         .logo-container {
           justify-content: center;
         }
-      }
-      .banner-responsive {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-      }
-    }
+        .menu {
+          /*  flex-direction: column; */
+        }
+        a {
+          border: 1.3px solid red;
+        }
+        @media screen and (max-width: 576px) {
+          nav {
+            justify-content: center;
+            flex-direction: column;
+          }
+          .menu {
+            flex-direction: column;
+            .logo-container {
+              justify-content: center;
+            }
+          }
+          .banner-responsive {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+          }
+        }
 
-    /*  banner section styling start */
-    .banner-responsive {
-      display: flex;
-      justify-content: space-between;
-    }
-    .banner-responsive .title {
-      color: #0b0223;
-      font-family: Work Sans;
-      font-size: 48px;
-      font-weight: 600;
-    }
-    .banner-responsive .goat-text {
-      font-family: Work Sans;
-      margin-top: -40px;
-      font-size: 95px;
-      font-weight: 800;
-      background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+        /*  banner section styling start */
+        .banner-responsive {
+          display: flex;
+          justify-content: space-between;
+        }
+        .banner-responsive .title {
+          color: #0b0223;
+          font-family: Work Sans;
+          font-size: 48px;
+          font-weight: 600;
+        }
+        .banner-responsive .goat-text {
+          font-family: Work Sans;
+          margin-top: -40px;
+          font-size: 95px;
+          font-weight: 800;
+          background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        /*  banner section styling ends */
+        /* gamer section styling starts */
+       .main-container{
+        background:   #FCEEF1;
+        width: 100%;
+       }
+        .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        
+        }
+        .right-gamer .title {
+          font-family: Work Sans;
+          font-size: 48px;
+          font-weight: 700;
+          background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+         background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; */
+        }
+        .gamer-para{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+
+        }
+        .read-more-container{
+         display: flex;
+         justify-content:end;
+        }
+        .read-more-btn{
+          padding: 10px 20px;
+          background: #FF42A5;
+          border-radius: 48px;
+          color: #FFF;
+          font-family: Work Sans;
+          font-size: 20px;
+          font-weight: 600;
+
+        }
   </style>
   <body>
     <section>
@@ -130,8 +172,12 @@
         <div class="left-banner">
           <p class="title">Play Like The</p>
           <p class="goat-text">G.O.A.T.</p>
-          <p style="display: flex;align-items:center"><img src="./images/Frame1.png" alt="">1-Click instant play</p>
-          <p style="display: flex;align-items:center"><img src="./images/Frame2.png" alt="">No Download</p>
+          <p style="display: flex; align-items: center">
+            <img src="./images/Frame1.png" alt="" />1-Click instant play
+          </p>
+          <p style="display: flex; align-items: center">
+            <img src="./images/Frame2.png" alt="" />No Download
+          </p>
           <p>1000s of supported online games</p>
         </div>
         <div class="right-banner">
@@ -139,6 +185,28 @@
         </div>
       </div>
     </section>
-    <!-- banner section starts -->
+    <!-- banner section ends -->
+    <!-- gamer section stars -->
+    <div class="main-container">
+    <section class="gamer">
+      <div class="container">
+        <div class="left-gamer">
+          <img src="./images/pngwing 4.png" alt="" />
+        </div>
+        <div class="right-gamer">
+          <p class="title">We are gamer</p>
+          <p class="gamer-para">
+            An international digital games and entertainment company. We
+            develop, publish and distribute multiplayer mobile games. We reach
+            over 400 million players each month and our audience keeps growing.
+            <div  class="read-more-container">
+            <span class="read-more-btn">Know More</span>
+          </div>
+          </p>
+          
+        </div>
+      </div>
+    </section>
+  </div>
   </body>
 </html>
