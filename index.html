@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <style>
+    .logo-container {
+      display: flex;
+      border: 1.3px solid teal;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #3c354f;
+
+      font-family: Work Sans;
+      font-size: 18px;
+
+      font-weight: 500;
+    }
+    .menu-btn {
+      border-radius: 8px;
+      background: rgba(11, 2, 35, 0.1);
+      padding: 4px;
+      border: 1.3px solid green;
+    }
+    nav {
+      display: flex;
+
+      border: 1.3px solid red;
+    }
+    .logo-container {
+      justify-content: center;
+    }
+    .menu {
+      /*  flex-direction: column; */
+    }
+    a {
+      border: 1.3px solid red;
+    }
+    @media screen and (max-width: 576px) {
+      nav {
+        justify-content: center;
+        flex-direction: column;
+      }
+      .menu {
+        flex-direction: column;
+        .logo-container {
+          justify-content: center;
+        }
+      }
+      .banner-responsive {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    /*  banner section styling start */
+    .banner-responsive {
+      display: flex;
+      justify-content: space-between;
+    }
+    .banner-responsive .title {
+      color: #0b0223;
+      font-family: Work Sans;
+      font-size: 48px;
+      font-weight: 600;
+    }
+    .banner-responsive .goat-text {
+      font-family: Work Sans;
+      margin-top: -40px;
+      font-size: 95px;
+      font-weight: 800;
+      background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+  <body>
+    <section>
+      <header>
+        <nav>
+          <div class="logo-container" style="display: flex">
+            <div>
+              <img src="./images/Frame.png" alt="" />
+            </div>
+            <div>Gamer</div>
+          </div>
+          <div>
+            <div
+              class="menu"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <a href="">About Us</a><a href="">Developers</a><a href=""></a>
+              <a href=""
+                >Follow Us On
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="24"
+                  viewBox="0 0 34 24"
+                  fill="none"
+                ></svg
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <!-- banner section starts -->
+    <section>
+      <div
+        class="banner-responsive"
+        style="display: flex; justify-content: space-between"
+      >
+        <div class="left-banner">
+          <p class="title">Play Like The</p>
+          <p class="goat-text">G.O.A.T.</p>
+          <p style="display: flex;align-items:center"><img src="./images/Frame1.png" alt="">1-Click instant play</p>
+          <p style="display: flex;align-items:center"><img src="./images/Frame2.png" alt="">No Download</p>
+          <p>1000s of supported online games</p>
+        </div>
+        <div class="right-banner">
+          <img src="./images/Group 18.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- banner section starts -->
+  </body>
+</html>

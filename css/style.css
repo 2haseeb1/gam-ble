@@ -1,0 +1,32 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+  section{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .logo-container{
+  
+    font-family: Work Sans;
+    font-size: 45px;
+  
+    font-weight: 700;
+    
+  }
+  .logo-container span{
+  
+    color:#ff24BD;
+    
+  }
+  nav{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .menu-btn{
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 20px;
+padding-right: 20px;
+  }
