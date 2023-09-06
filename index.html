@@ -13,6 +13,9 @@
     <title>Document</title>
   </head>
   <style>
+    body{
+      font-family: work sans;
+    }
         .logo-container {
           display: flex;
           border: 1.3px solid teal;
@@ -62,9 +65,19 @@
             justify-content: center;
             align-items: center;
           }
-        }
 
-        /*  banner section styling start */
+          .gamer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-div {
+        margin-top: 20px;
+      }
+}
+
+        
+
         .banner-responsive {
           display: flex;
           justify-content: space-between;
@@ -74,6 +87,7 @@
           font-family: Work Sans;
           font-size: 48px;
           font-weight: 600;
+        
         }
         .banner-responsive .goat-text {
           font-family: Work Sans;
@@ -87,84 +101,41 @@
         }
         /*  banner section styling ends */
         /* gamer section styling starts */
-       .main-container{
-        background:   #FCEEF1;
-        width: 100%;
-       }
-        .gamer-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        
-        }
-        .right-gamer .title {
-          font-family: Work Sans;
-          font-size: 48px;
-          font-weight: 700;
-          background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
-         background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; */
-        }
-        .gamer-para{
-    color: #534C64;
-    font-family: Work Sans;
-    font-size: 18px;
-    font-weight: 400;
+       /* Default styles for larger screens */
+    .gamer-container {
+      display: flex;
+      align-items: center;
+    }
 
-        }
-        .read-more-container{
-         display: flex;
-         justify-content:end;
-        }
-        .read-more-btn{
-          padding: 10px 20px;
-          background: #FF42A5;
-          border-radius: 48px;
-          color: #FFF;
-          font-family: Work Sans;
-          font-size: 20px;
-          font-weight: 600;
+    .left-div {
+      flex: 2;
+    }
 
-        }
-        .gamer-para .purpose{
-          color: red;
-         font-family: Work Sans;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 45px; 
-       
-          
+    .right-div {
+      flex: 1;
+    }
+   
+    .gamer-image {
+      max-width: 100%;
+      height: auto;
+    }
 
-        }
-        .read-more-container .purpose{
-          color: #534C64;
-          font-size: 24px;
-          font-weight: 500;
+    .title{
+font-size: 48px;
+font-weight: 700;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    }
+.right-div .gamer-para{
+color: #534C64;
+font-size: 18px;
+font-weight: 400;
+}
+    
+   
 
-        }
-        
-        .purpose-gamer{
-         display: flex;
-         justify-content:center;
-         flex-direction: column;
-         align-items: flex-end;
-        
-        }
-        .purpose{
-          color: #534C64;
-          text-align: right;
-          font-size: 24px;
-          font-weight: 500;
-
-        }
-        .last-line{
-          margin-top: -10px;
-          color: #534C64;
-          font-size: 32px;
-          font-weight: 700;
-
-        }
   </style>
   <body>
     <section>
@@ -224,34 +195,19 @@
       </div>
     </section>
     <!-- banner section ends -->
-    <!-- gamer section stars -->
-    <div class="main-container">
-    <section class="gamer">
+    <!-- gamer section starts -->
+    <section>
       <div class="gamer-container">
-        <div class="left-gamer">
-          <img src="./images/pngwing 4.png" alt="" />
+        <div class="left-div">
+          <img src="./images/pngwing 4.png" alt="image_description" class="gamer-image">
         </div>
-        <div class="right-gamer">
-          <p class="title">We are gamer</p>
-          <p class="gamer-para">
-            An international digital games and entertainment company. We
-            develop, publish and distribute multiplayer mobile games. We reach
-            over 400 million players each month and our audience keeps growing.
-            <div  class="read-more-container">
-            <p class="read-more-btn">Know More</p>
-            
-            
-          </div>
-          <div class="purpose-gamer">
-            <p class="purpose">Our Purpose...</p> 
-            <p class="last-line"> “unleash the gamer in everyone”</p> 
-          </p>
-          </div>
-         
-          
+        <div class="right-div">
+          <h1 class="title">We are gamer</h1>
+          <p class="gamer-para">An international digital games and entertainment company. We develop, publish and distribute multiplayer mobile games. We reach over 400 million players each month and our audience keeps growing.</p>
         </div>
       </div>
     </section>
+     <!-- gamer section ends -->
   </div>
   </body>
 </html>
