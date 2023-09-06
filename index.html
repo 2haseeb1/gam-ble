@@ -204,6 +204,56 @@ font-weight: 700;
     align-items: center; 
   }
 }
+
+/* funny videos section styling starts  */
+
+.row {
+       display: flex;
+      flex-direction: row;
+    }
+
+@media only screen and (max-width: 576px) {
+            
+            .row{
+             
+              flex-direction: column;
+            }
+           
+        }
+       
+       
+      
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+       
+        .column img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* funny videos section styling ends  */
+
+        /* play section stylying starts */
+        .play-title{
+          font-size: 48px;
+          font-weight: 700;
+             }
+        .play-title .play-span{
+          color: #F948B2;
+             }
+             .play-container{
+              display: flex;
+              justify-content: space-between;
+             }
   </style>
   <body>
     <section>
@@ -257,9 +307,11 @@ font-weight: 700;
           </p>
           <p>1000s of supported online games</p>
         </div>
-        <div class="right-banner">
+        <div class="right-banner" style="position:relative">
           <img src="./images/Group 18.png" alt="" />
+         
         </div>
+       
       </div>
     </section>
     <!-- banner section ends -->
@@ -295,6 +347,51 @@ font-weight: 700;
      
     </section>
      <!-- gamer section ends -->
+     <section>
+   
+    <!-- funny videos section starts -->
+     <section>
+      <p style="text-align: center;">hello</p>
+      <div class="row">
+       
+          <div class="column">
+             
+              <img src="./images/Rectangle 4.png" alt="Image 1">
+          </div>
+          <div class="column">
+              <img src="./images/Rectangle 5.png" alt="Image 2">
+          </div>
+          <div class="column">
+              <img src="./images/Rectangle 7.png" alt="Image 3">
+          </div>
+          <div class="column">
+              <img src="./images/Rectangle 6.png" alt="Image 4">
+          </div>
+      </div>
+  </section>
+   <!-- funny videos section ends -->
+
+  <!-- play section starts -->
+  <section>
+<div class="play-container">
+<div>
+  <p class="play-title"><span class="play-span">Play Instantly,</span> <br>No Downloads <br> No Installs.</p>
+</div>
+<div style="position:relative">
+<div>
+  <img src="./images/Rectangle 55.png" alt="">
+</div>
+<div>
+  <img src="./images/Rectangle 66.png" alt="" style="position:absolute;bottom:-200px;right:500px;">
+</div>
+</div>
+</div>
+
+
+  </section>
+    <!-- play section starts -->
+    
+
   </div>
   </body>
 </html>
