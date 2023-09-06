@@ -74,6 +74,11 @@
       .right-div {
         margin-top: 20px;
       }
+      .below-gamer-container {
+    justify-content: center; 
+    align-items: center; 
+  }
+    
 }
 
         
@@ -116,7 +121,7 @@
     }
    
     .gamer-image {
-      max-width: 100%;
+      max-width: calc(100% - 20px);
       height: auto;
     }
 
@@ -133,9 +138,72 @@ color: #534C64;
 font-size: 18px;
 font-weight: 400;
 }
-    
-   
 
+.gamer-btn-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.gamer-btn{
+  padding:21px 43px;border-radius: 48px;background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);outline: none;border:none;
+            color: #FFF;
+            max-width:230px;
+
+font-size: 20px;
+
+font-weight: 600;
+
+text-transform: uppercase;
+
+}
+.below-gamer-container {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-end; 
+  width: 550px;
+  height: 300px;
+   margin: 20px auto;
+}
+
+.div1 {
+  width:auto;
+  height: 100px;
+  color: #534C64;
+
+font-size: 100%;
+
+font-weight: 700;
+
+
+
+
+}
+ .div2, .div3 {
+  width: auto;
+  height: 100px;
+
+}
+.div2{
+  color: #534C64;
+font-size: 24px;
+font-weight: 500;
+
+}
+.div3{
+  color: #534C64;
+font-size: 32px;
+font-weight: 700;
+
+}
+
+@media screen and (max-width: 576px) {
+  .below-gamer-container {
+    justify-content: center; 
+    align-items: center; 
+  }
+}
   </style>
   <body>
     <section>
@@ -204,8 +272,27 @@ font-weight: 400;
         <div class="right-div">
           <h1 class="title">We are gamer</h1>
           <p class="gamer-para">An international digital games and entertainment company. We develop, publish and distribute multiplayer mobile games. We reach over 400 million players each month and our audience keeps growing.</p>
+          <div class="gamer-btn-container" 
+          >
+          
+          <div class="below-gamer-container">
+            <div class="div1">
+                <p style="padding: 21px 40px;border-radius:48px;color:#fff;background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);font-size:100%">KHOW MORE</p>
+            </div>
+          
+              <div class="div2">
+                  <p>Our purpose... </p>
+              </div>
+              <div class="div3">
+                  <p>“unleash the gamer in everyone”</p>
+              </div>
+  
+          </div>
+
         </div>
-      </div>
+          </div>
+        </div>
+     
     </section>
      <!-- gamer section ends -->
   </div>
