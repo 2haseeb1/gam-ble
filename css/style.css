@@ -1,32 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-  section{
-    width: 90%;
-    margin: 0 auto;
-  }
-  .logo-container{
+#footer {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+}
+.header,.banner,.gamer,.play,.funny-videos{
+  width:95%;
+}
+section{
   
-    font-family: Work Sans;
-    font-size: 45px;
-  
-    font-weight: 700;
-    
-  }
-  .logo-container span{
-  
-    color:#ff24BD;
-    
-  }
-  nav{
-    display:flex;
-    justify-content: space-between;
-  }
+  margin: 0 auto;
+}
 
-  .menu-btn{
-    border-radius: 8px;
-background: rgba(11, 2, 35, 0.10);
-padding-top: 4px;
-padding-bottom: 4px;
-padding-left: 20px;
-padding-right: 20px;
-  }
+.logo-container{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.logo-container span{
+  color:#ff24BD;
+}
+
+nav{
+  display:flex;
+  justify-content: space-between;
+}
+
+.menu-btn{
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.10);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
