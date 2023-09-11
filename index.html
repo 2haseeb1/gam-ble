@@ -357,9 +357,28 @@ background-clip: text;
       gap: 30px;
       margin-top: 25px;
     }
+
+    .terms-conditions{
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top:25px;
+     
+    }
     /* Add media queries for mobile responsiveness */
 
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
+      .terms-conditions {
+      display: grid;
+       grid-template-columns: repeat(2, 1fr); 
+       grid-template-rows: repeat(2, auto); 
+       gap: 10px; 
+       margin: 0 auto;
+      } 
+      .terms-centered{
+        display: flex;
+        justify-content: center;
+      }
   .footer-title {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -369,7 +388,7 @@ background-clip: text;
   }
   .footer-images{
       display: grid;
-      grid-template-columns:100px 100px 100px ;
+      grid-template-columns:100px 140px 120px ;
       gap:30px;
       grid-template-rows: 1fr 1fr;
     }
@@ -399,15 +418,12 @@ background-clip: text;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
   }
+
+  
 }
   
-  .terms-conditions{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    color:white;
-    margin-top: 25px;
-  }
+  
+  
   .terms-conditions p{
     color: rgba(255, 255, 255, 0.60);
     font-size: 16px;
@@ -595,8 +611,8 @@ footer-align" style="padding-top: 25px;">
 
 
 <a href="https://twitter.com/"><img src="./images/twitter 1.png" alt=""></a>
-<img src="./images/facebook 1.png" alt="">
-<a href="https://facebook.com/"></a>
+
+<a href="https://facebook.com/"><img src="./images/facebook 1.png" alt=""></a>
 
 <a href="https://www.youtube.com/" alt=""><img src="./images/youtube1.png" alt=""></a>
 
@@ -606,12 +622,16 @@ footer-align" style="padding-top: 25px;">
 
 <a href="https://www.apple.com/"><img src="./images/apple.png" alt=""></a>
 </div>
-
+<div class="terms-centered">
 <div class="terms-conditions">
-  <p>Terms and Conditions</p>
-  <p>Privacy Policy</p>
+ 
+
+    <p>Terms and Conditions</p>
+    <p>Privacy Policy</p>
+
   <p>Cookie Policy</p>
   <p>Privacy Settings</p>
+</div>
 </div>
     </footer>
 
