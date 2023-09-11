@@ -26,6 +26,10 @@
           display: flex;
        
         }
+        .logo-container span{
+          bg:#0B0223;
+       
+        }
         .menu a {
           text-decoration: none;
           color: #3c354f;
@@ -102,6 +106,7 @@ padding: 10px 30px;
           font-family: Work Sans;
           font-size: 48px;
           font-weight: 600;
+          line-height: 200%;
         
         }
         .banner-responsive .goat-text {
@@ -306,8 +311,62 @@ background-clip: text;
         margin-top: 300px;
     }
 
+    .footer-img{
+      width: 86.04px;
+      height: 40px;
+    }
+    .footer-title{
+      color:#fff;
+     font-size: 45px;
+    font-weight: 700;
+    }
+    .footer-title span{
+      background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    }
+    .footer-align{
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+    .footer-info{
+      display: flex;
+      justify-content: center;
+      color:white;
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 600;
+     
 
+    }
+    .footer-info p{
+     margin-left: 30px;
+     
 
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    /* Add media queries for mobile responsiveness */
+
+    @media screen and (max-width: 576px) {
+        .footer-info {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+       
+        }
+
+        .footer-info p {
+            margin: 0 10px;
+        }
+    }
   </style>
   <body>
     <!-- header section starts -->
@@ -318,7 +377,7 @@ background-clip: text;
             <div>
               <img src="./images/Frame.png" alt="" />
             </div>
-            <div>Gamer</div>
+            <div><span>G</span>amer</div>
           </div>
           <div>
             <div
@@ -454,8 +513,25 @@ background-clip: text;
     <!-- play section ends -->
     <!-- icons section starts -->
     <div style="display:flex;justify-content: center;position: relative;">   
-      <div id="footer" style="height: 100px; background-color: red;"> 
-        This is the footer.
+      <div id="footer" style="height: auto; background-color: #0B0223;"> 
+       
+        <div class="footer-align">
+          <img src="./images/Frame.png" alt="" class="footer-img">
+          <p class="footer-title"><span>G</span>amer</p>
+        </div>
+        <div  class="footer-info">
+          <p>Our Story</p>
+          <p>Games</p>
+          <p>Web Games</p>
+          <p>Careers</p>
+          <p>Support</p>
+          <p>My Account</p>
+        </div>
+       <div>
+        <img src="./images/twitter 1.png" alt="">
+        <img src="./images/facebook 1.png" alt="">
+        <img src="./images/youtube1.png" alt="">
+       </div>
       </div>
     </div>
     
