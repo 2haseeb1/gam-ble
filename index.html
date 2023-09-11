@@ -299,6 +299,57 @@ background-clip: text;
               flex-direction: row;
               justify-content: space-between;
              }
+             /* icons section styling starts */
+             .icon-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: -40px;
+
+    }
+    .icon-div{
+        width: 243px;
+        height: 100px;
+       
+        display: flex; 
+        align-items: center; 
+        justify-content:start;
+        min-width: 243px;
+       
+    }
+    .icon-div > p{
+       
+       margin-left: 10px;
+       
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        width:15em;
+        align-items: center;
+    }
+    .icon-section{
+        display: flex;
+        justify-content: center;
+    }
+    .icon-container{
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:20px;
+       
+    }
+
+    @media (max-width: 576px) {
+    .icon-container {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-rows:repeat(3,1fr) ;
+    }
+}
              /* footer  section styling starts */
              #footer {
        
@@ -590,7 +641,51 @@ background-clip: text;
   </section>
     <!-- play section ends -->
     <!-- icons section starts -->
-    
+    <section>
+      <div class="icon-container">
+          <div class="icon div-1" style="">
+              <img src="./images/Rectangle 11.png" alt="">
+              <p>Action Games</p>
+            </div>
+            
+          <div class="icon div-1">
+              <img src="./images/Rectangle 12.png" alt="">
+              <p>Adventure Games</p>
+          </div>
+          <div class="icon div-1">
+              <img src="./images/Rectangle 13.png" alt="">
+              <p>Arcade Games</p>
+          </div>
+          <div class="icon div-1">
+              <img src="./images/Rectangle 14.png" alt="">
+              <p>Educational Games</p>
+          </div>
+          <div class="icon div-1">
+              <img src="./images/Rectangle 15.png" alt="">
+              <p>Word Games</p>
+          </div>
+          <div class="icon div-1">
+              <img src="./images/Rectangle 16.png" alt="">
+              <p>Role Palying Games</p>
+          </div>
+          
+          <div class="icon div-1">
+              <img src="./images/Rectangle 17.png" alt="">
+              <p>Music & Audio Games</p>
+          </div>
+
+              
+          <div class="icon div-1">
+              <img src="./images/Rectangle 18.png" alt="">
+              <p>Puzzle Games</p>
+          </div>
+          
+          <div class="icon div-1">
+              <img src="./images/Rectangle 19.png" alt="">
+              <p>Strategy Games</p>
+          </div>
+      </div>
+  </section>
 
     <!-- footer section starts -->
     <footer>
