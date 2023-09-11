@@ -236,7 +236,43 @@ background-clip: text;
 
 
 }
+.row .column:nth-child(3):hover {
+  filter: brightness(0.1); /* Makes the div darker */
+}
 
+.row .column:nth-child(3):hover::after {
+  content: "Watch Now";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: hotpink;
+  text-align: center;
+  opacity: 0.80;
+  filter: none; /* Remove the filter property to prevent the text from getting dark */
+  font-size: 20px;
+  font-weight: 600;
+}
+.row .column:nth-child(3):hover::before {
+   content: ""; 
+  display: inline-block;
+  background-image: url("./images/play-button\ 1.png"); 
+  background-size: cover;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  filter: brightness(0.4);
+  filter: contrast(200%);
+}
 .row {
        display: flex;
       flex-direction: row;
